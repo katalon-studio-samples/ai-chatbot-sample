@@ -1,0 +1,23 @@
+.gitignore
+  f3f20180856ec2ba 1-41
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.17",
+  "base_commit_sha": "c74f3226e6c914ba3730685c044df45002859faa",
+  "prompts": {
+    "f3f20180856ec2ba": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ffa90dbc-cb6c-4854-99c0-5571ddc3c440",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Coty Rosenblath <coty@katalon.com>",
+      "messages": [],
+      "total_additions": 41,
+      "total_deletions": 0,
+      "accepted_lines": 41,
+      "overriden_lines": 0
+    }
+  }
+}
