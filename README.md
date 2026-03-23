@@ -23,7 +23,7 @@ A Katalon Studio sample project demonstrating how to test AI chatbot and convers
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/katalon-studio-samples/katalon-chatbot-testing-sample.git
+   git clone https://github.com/katalon-studio-samples/ai-chatbot-sample.git
    ```
 
 2. Open the project in Katalon Studio:
