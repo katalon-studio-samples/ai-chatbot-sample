@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>default</name>
+   <tag></tag>
+   <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description>Port for the local chatbot webapp</description>
+      <initValue>3456</initValue>
+      <name>CHATBOT_PORT</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Base URL for the chatbot webapp</description>
+      <initValue>'http://localhost:3456'</initValue>
+      <name>CHATBOT_URL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Default wait timeout in seconds</description>
+      <initValue>30</initValue>
+      <name>DEFAULT_TIMEOUT</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Milliseconds between polling checks during streaming</description>
+      <initValue>500</initValue>
+      <name>STREAMING_POLL_INTERVAL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Browser to use for testing</description>
+      <initValue>'Chrome'</initValue>
+      <name>BROWSER</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>

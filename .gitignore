@@ -1,0 +1,41 @@
+# Katalon Studio
+bin/
+Libs/
+Drivers/
+Reports/
+console.properties
+.project
+.classpath
+.settings/
+.cache/
+settings/
+
+# Build
+build/
+out/
+*.class
+*.jar
+!Libs/*.jar
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+*~
+
+# Claude Code
+.claude/
+
+# Python
+__pycache__/
+*.pyc
+
+# Logs
+*.log

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Chatbot Simulator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Chat History Sidebar -->
+  <aside class="sidebar hidden" id="sidebar">
+    <div class="sidebar-header">
+      <h2>Chat History</h2>
+    </div>
+    <div class="sidebar-list" id="sidebar-list"></div>
+  </aside>
+
+  <!-- Main Chat Area -->
+  <div class="main">
+    <div class="top-bar">
+      <button data-testid="chat-history-toggle" id="btn-history-toggle" onclick="app.toggleSidebar()">History</button>
+      <button data-testid="new-chat-button" id="btn-new-chat" onclick="app.resetConversation()">New Chat</button>
+      <span style="flex:1"></span>
+      <span style="font-size:13px;color:#888">AI Chatbot Simulator</span>
+    </div>
+
+    <div class="messages" id="messages"></div>
+
+    <!-- Thinking Indicator -->
+    <div class="thinking-indicator" id="thinking-indicator" data-testid="thinking-indicator">
+      <div class="thinking-dots">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+
+    <!-- Error Message -->
+    <div class="error-message" id="error-message" data-testid="error-message">
+      <div class="error-content" id="error-content"></div>
+    </div>
+
+    <!-- Suggestion Chips -->
+    <div class="suggestion-chips" id="suggestion-chips"></div>
+
+    <!-- File display -->
+    <div class="file-display" id="file-display"></div>
+
+    <!-- Input Area -->
+    <div class="input-area">
+      <div class="input-container">
+        <button class="btn-upload" data-testid="upload-button" onclick="document.getElementById('upload-input').click()">Attach</button>
+        <input type="file" id="upload-input" data-testid="upload-input" style="display:none" onchange="app.handleFileUpload(event)">
+        <textarea
+          id="chat-input"
+          data-testid="chat-input"
+          placeholder="Type a message..."
+          rows="1"
+          onkeydown="app.handleKeyDown(event)"
+          oninput="app.autoResize(this)"
+        ></textarea>
+        <button class="btn-send" id="btn-send" data-testid="send-button" onclick="app.sendMessage()">Send</button>
+        <button class="btn-stop" id="btn-stop" data-testid="stop-button" onclick="app.stopGeneration()">Stop</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
